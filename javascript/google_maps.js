@@ -2,13 +2,13 @@
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
-      function initMap() {
+      function initMap(pac_input) {
         /*var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -33.8688, lng: 151.2195},
           zoom: 13
         });*/
         var card = document.getElementById('pac-card');
-        var input = document.getElementById('pac-input');
+        var input = document.getElementById(pac_input);
         var types = document.getElementById('type-selector');
         var strictBounds = document.getElementById('strict-bounds-selector');
 

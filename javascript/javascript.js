@@ -5,8 +5,9 @@ $(document).ready(function() {
 
         google_url();
         $.getScript("google_maps.js");
-        $("#pac-input").on("input",function(){initMap();});
-        $("#destino").on("input",function(){console.log("ok2")});
+        $("#origem-input").on("input",function(){initMap("origem-input");});
+        $("#destino-input").on("input",function(){initMap("destino-input");});
+        //$("#destino").on("input",function(){console.log("ok2")});
 
     }
 );
