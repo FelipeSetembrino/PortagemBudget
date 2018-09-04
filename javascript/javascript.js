@@ -7,7 +7,7 @@ $(document).ready(function() {
         $.getScript("google_maps.js");
         $("#origem-input").on("input",function(){initMap("origem-input");});
         $("#destino-input").on("input",function(){initMap("destino-input");});
-        //$("#destino").on("input",function(){console.log("ok2")});
+
 
     }
 );

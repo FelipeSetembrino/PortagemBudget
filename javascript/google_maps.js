@@ -7,10 +7,10 @@
           center: {lat: -33.8688, lng: 151.2195},
           zoom: 13
         });*/
-        var card = document.getElementById('pac-card');
+        //var card = document.getElementById('pac-card');
         var input = document.getElementById(pac_input);
-        var types = document.getElementById('type-selector');
-        var strictBounds = document.getElementById('strict-bounds-selector');
+        //var types = document.getElementById('type-selector');
+        //var strictBounds = document.getElementById('strict-bounds-selector');
 
         //map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
         
@@ -25,14 +25,15 @@
         autocomplete.setFields(
             ['address_components', 'geometry', 'icon', 'name']);
 
-        var infowindow = new google.maps.InfoWindow();
+        /*var infowindow = new google.maps.InfoWindow();
         var infowindowContent = document.getElementById('infowindow-content');
-        infowindow.setContent(infowindowContent);
+        infowindow.setContent(infowindowContent);*/
         /*var marker = new google.maps.Marker({
           map: map,
           anchorPoint: new google.maps.Point(0, -29)
         });*/
-
+        
+        /*
         autocomplete.addListener('place_changed', function() {
           infowindow.close();
           marker.setVisible(false);
@@ -68,6 +69,7 @@
           infowindowContent.children['place-address'].textContent = address;
           infowindow.open(map, marker);
         });
+        */
 
         // Sets a listener on a radio button to change the filter type on Places
         // Autocomplete.
